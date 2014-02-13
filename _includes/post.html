@@ -1,0 +1,25 @@
+<div class="content" id="home">
+  <div id="sidebar-button">
+    <img src="/images/sidebar-button.png">
+  </div>
+  <div id="post-info">
+    <div id="cover-photo-container">
+      <img id="cover-photo" src="/images/{{ page.cover }}">
+    </div>
+    <div id="info-container">
+      <h1 id="title">{{ page.title }}</h1>
+      <span id="date">{{ page.date | date_to_string }}</a>
+    </div>
+  </div>
+
+  <div class="post">
+    {{ content }}
+  </div>
+  <div class="fb-like" data-href="http://mjzac.github.io{{page.url}}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+  <div class="colophon">
+    <p>
+      <span id="pub-date">Published on {{ page.date | date_to_string }}</span> <span class="separator">&bull;</span>
+      <span id="social">I tweet <a href="http://twitter.com/mjzacharias">@mjzacharias</a>!</span>
+    </p>
+  </div>
+</div>
